@@ -1,25 +1,31 @@
 import React from "react";
-import Navbar from "./Navbar";
-import { Route, Routes } from "react-router-dom";
-import Home from "./Routw/Home";
-import SandT from "./Routw/SandT";
-import EandE from "./Routw/EandE";
-import MyWorks from "./Routw/MyWorks";
-import NotFound from "./Routw/ComingSoon";
+import { Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home";
+import Publications from "./Pages/Publications";
+import Workshops from "./Pages/Workshops";
+import Professional from "./Pages/Professional";
+import DataSet from "./Pages/DataSet";
+import MyWorks from "./Pages/Myworks";
+import Blogs from "./Pages/Blogs";
+import Contact from "./Pages/Contact";
+import Develop from "./Route/Develop";
 
 const App: React.FC = () => {
   return (
-    <div className="min-h-screen w-full bg-black text-white">
-      <Navbar />
+    <>
+      <Develop />
       <Routes>
-        <Route path="/" element={<Home/>} />
+        <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/skillsandtechnology" element={<SandT />} />
-        <Route path="/educationandexperience" element={<EandE />} />
-        <Route path="/myworks" element={<MyWorks />} />
-        <Route path="/CommingSoon" element={<NotFound/>}/>
+        <Route path="/publication" element={<Publications />} />
+        <Route path="/workshop" element={<Workshops />} />
+        <Route path="/professional" element={<Professional/>}/>
+        <Route path="/dataset" element={<DataSet/>}/>
+        <Route path="/myworks" element={<MyWorks/>}/>
+        <Route path="/blogs" element={<Blogs/>}/>
+        <Route path="/contact" element={<Contact/>}/>
       </Routes>
-    </div>
+    </>
   );
 };
 
