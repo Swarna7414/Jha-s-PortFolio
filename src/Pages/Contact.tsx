@@ -1,9 +1,7 @@
-import React from "react";
-
 const Contact:React.FC=()=>{
     return(
         <div>
-            <h1 className="mt-52">This is My Contact</h1>
+            <h1>Contact me</h1>
         </div>
     );
 }

@@ -1,9 +1,7 @@
-import React from "react";
-
 const Publications:React.FC=()=>{
     return(
         <div>
-            <h1 className="mt-52">Publications</h1>
+            <h1>My Works</h1>
         </div>
     );
 }

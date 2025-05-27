@@ -1,4 +1,4 @@
-@keyframes waveCustom {
+@keyframes wave {
   0% { transform: rotate(0deg); }
   15% { transform: rotate(14deg); }
   30% { transform: rotate(-8deg); }
@@ -9,12 +9,14 @@
   100% { transform: rotate(0deg); }
 }
 
-/* Trigger 3x wave on hover of parent group */
-.group:hover .wave-on-hover {
-  animation: waveCustom 1.5s ease-in-out 3;
+.wave-on-hover {
+  display: inline-block;
   transform-origin: 70% 70%;
 }
 
-.text-size{
-  font-size: larger;
+.group:hover .wave-on-hover {
+  animation: wave 1s ease-in-out 3;
+}
+.wave-on-load {
+  animation: wave 0.5s ease-in-out 3;
 }
