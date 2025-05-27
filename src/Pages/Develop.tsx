@@ -2,6 +2,7 @@ import React from 'react';
 import smallscreen from '../assets/smallscreen.png';
 import BigScreenR from '../assets/Home_Picture-removebg-preview.png';
 import "../Styles/animation.css";
+import "../Styles/component.css";
 import { FaGoogleScholar } from "react-icons/fa6";
 import { SiResearchgate } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
@@ -17,7 +18,7 @@ import { Clarivate, Dblb, Github, GoogleScholr, Linkedin, Orcid, ResearchGate, S
 
 const Develop: React.FC = () => {
   return (
-    <section className="min-h-screen bg-black flex flex-col xl:flex-row">
+    <section className="min-h-screen bg-black flex flex-col xl:flex-row scrollbar-hide">
       
       
       <div className="xl:w-1/2 w-full">

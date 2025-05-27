@@ -22,7 +22,7 @@ const navLinkClasses = ({ isActive }: { isActive: boolean }) =>
     <header className="w-full bg-black p-5 sticky top-0 z-50 flex flex-row items-center justify-between">
         
       <div className="group">
-        <h1 className="text-white text-4xl font-cursive hover:cursor-pointer transition-all duration-300 group-hover:font-bold italic">
+        <h1 className="text-white text-4xl font-cursive hover:cursor-pointer transition-all duration-300 group-hover:font-bold italic cursive-vibes">
         <span className="transition-all duration-300 group-hover:text-blue-500">D</span>
         ebesh{" "}
         <span className="transition-all duration-300 group-hover:text-blue-500">J</span>
