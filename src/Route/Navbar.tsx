@@ -45,7 +45,7 @@ const navLinkClasses = ({ isActive }: { isActive: boolean }) =>
           <NavLink to="/dataset" className={navLinkClasses}>DataSet</NavLink>
           <NavLink to="/myworks" className={navLinkClasses}>MyWorks</NavLink>
           <NavLink to="/blogs" className={navLinkClasses}>Blogs</NavLink>
-          <NavLink to="/contact" className="shadow-sm shadow-blue-500 px-2.5 py-2 rounded-sm font-medium hover:scale-105 hover:bg-gray-200 hover:shadow-blue-300 text-white hover:text-blue-400">Contact Me</NavLink>
+          <NavLink to="/contact" className="shadow-sm shadow-blue-500 px-2.5 py-2 rounded-md font-medium hover:scale-105 hover:bg-gray-200 hover:shadow-blue-300 text-white hover:text-blue-400">Contact Me</NavLink>
         </div>
         
         <div className="xl:hidden">

@@ -10,7 +10,7 @@ import MyWorks from "./Pages/Myworks";
 import Blogs from "./Pages/Blogs";
 import Contact from "./Pages/Contact";
 import Navbar from "./Route/Develop";
-import Develop from "./Pages/Develop";
+import DevelopPublicatons from "./Pages/DevelopPublication";
 
 
 
@@ -21,7 +21,7 @@ const App: React.FC = () => {
     <>
       <Navbar/>
         <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<Develop />} />
+          <Route path="/" element={<DevelopPublicatons />} />
           <Route path="/home" element={<Home />} />
           <Route path="/publication" element={<Publications />} />
           <Route path="/workshop" element={<Workshops />} />

@@ -33,19 +33,19 @@
   background: transparent;
 }
 
-/* ✅ Scrollbar thumb (now in blue-300) */
+
 ::-webkit-scrollbar-thumb {
   background: #93c5fd; /* Tailwind blue-300 */
   border-radius: 10px;
   transition: background 0.3s ease;
 }
 
-/* ✅ Optional hover effect: slightly darker blue */
+
 ::-webkit-scrollbar-thumb:hover {
-  background: #60a5fa; /* Tailwind blue-400 */
+  background: #60a5fa;
 }
 
-/* Only show on hover */
+
 .scrollbar-hide::-webkit-scrollbar {
   width: 0px;
 }
@@ -55,7 +55,7 @@
 }
 
 .scrollbar-hide {
-  scrollbar-width: none; /* Firefox */
+  scrollbar-width: none;
 }
 
 .scrollbar-hide:hover {
