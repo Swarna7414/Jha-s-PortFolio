@@ -1,0 +1,3 @@
+.hover-white-shadow:hover {
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.4), 0 0 10px rgba(255, 255, 255, 0.4);
+}

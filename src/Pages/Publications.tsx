@@ -11,11 +11,11 @@ const DevelopPublicatons: React.FC = () => {
       </h1>
 
       <div className="flex flex-col xl:flex-row gap-2 mt-2">
-        {/* First Box - Journals */}
+        
         <div className="flex flex-col xl:w-1/2">
           <h1 className="text-3xl ml-2 hover:text-blue-200 cursor-pointer mb-2">Journals</h1>
 
-          {/* ✅ Scroll works correctly here */}
+          
           <div className="w-full max-h-[75vh] overflow-y-auto text-white border-2 p-2 space-y-2 rounded-2xl hover:shadow-md shadow-white scrollbar-hide">
             <div>
               <div className="group hover:scale-[0.98] transition-transform duration-200 flex flex-row items-start text-lg mt-1" onClick={Validatingpolyp}>
@@ -76,7 +76,7 @@ const DevelopPublicatons: React.FC = () => {
                   D. Jha et al., “
                   <span className="font-semibold hover:underline cursor-pointer group-hover:text-blue-400 text-blue-200">
                     PolypGen: A multi-center polyp detection and segmentation dataset for generalisability assessment
-                    </span>Nature Scientific Data, 2023.
+                    </span>,"Nature Scientific Data, 2023.
                 </h1>
               </div>
               
@@ -85,8 +85,8 @@ const DevelopPublicatons: React.FC = () => {
                 <h1 className="cursor-pointer ml-2">
                   H. Borgli*, V. Thambawita*, P. Smedsrud*, S. Hicks*, D. Jha*, S. Eskeland, et al., “
                   <span className="font-semibold hover:underline cursor-pointer group-hover:text-blue-400 text-blue-200">
-                    “Hyper-Kvasir: A Comprehensive Multi-Class Image and Video Dataset for Gastrointestinal Endoscopy,”
-                  </span>Nature Scientific Data [Contributed equally], 2020.
+                    Hyper-Kvasir: A Comprehensive Multi-Class Image and Video Dataset for Gastrointestinal Endoscopy
+                  </span>,"Nature Scientific Data [Contributed equally], 2020.
                 </h1>
               </div>
               
@@ -94,10 +94,10 @@ const DevelopPublicatons: React.FC = () => {
               <div className="group hover:scale-[0.98] transition-transform duration-200 flex flex-row items-start text-lg" onClick={KvasirCapsule}>
                 <IoMdArrowDroprightCircle className="text-4xl transition-colors duration-200 group-hover:text-blue-400 cursor-pointer" />
                 <h1 className="cursor-pointer ml-2">
-                  P. Smedsrud*, H. Gjestang*, O. Nedrejord*, E. Nss*, V. Thambawita*, S. Hicks*, HBorgli*, D. Jha*, et al.,
+                  P. Smedsrud*, H. Gjestang*, O. Nedrejord*, E. Nss*, V. Thambawita*, S. Hicks*, HBorgli*, D. Jha*, et al.,"
                   <span className="font-semibold hover:underline cursor-pointer group-hover:text-blue-400 text-blue-200">
                   Kvasir-Capsule, a video capsule endoscopy dataset
-                  </span>Nature Scientific Data, [equally contributed], 2021.
+                  </span>,"Nature Scientific Data, [equally contributed], 2021.
                 </h1>
               </div>
               
@@ -116,8 +116,8 @@ const DevelopPublicatons: React.FC = () => {
                 <h1 className="cursor-pointer ml-2">
                   A Srivastava, D. Jha et al,”
                   <span className="font-semibold hover:underline cursor-pointer group-hover:text-blue-400 text-blue-200">
-                    ”MSRF-Net: A Multi-Scale Residual Fusion Network for Biomedical Image Segmentation,”
-                  </span>” IEEE Journal of Biomedical and Health Informatics, 2022.
+                    MSRF-Net: A Multi-Scale Residual Fusion Network for Biomedical Image Segmentation
+                  </span>,”IEEE Journal of Biomedical and Health Informatics, 2022.
                  </h1>
               </div>
               
@@ -127,7 +127,7 @@ const DevelopPublicatons: React.FC = () => {
                   T. Ross, A. Reinke, D. Jha et al.“
                   <span className="font-semibold hover:underline cursor-pointer group-hover:text-blue-400 text-blue-200">
                     Comparative validation of multi-instance instrument segmentation in endoscopy: results of the ROBUST-MIS 2019 Challenge
-                  </span>”, Medical Image Analysis, vol. 70, 2021.
+                  </span>”,Medical Image Analysis, vol. 70, 2021.
                 </h1>
               </div>
               
@@ -136,7 +136,7 @@ const DevelopPublicatons: React.FC = () => {
                 <h1 className="cursor-pointer ml-2">
                   D. Jha et al., “
                   <span className="font-semibold hover:underline cursor-pointer group-hover:text-blue-400 text-blue-200">
-                    “Diagnosis of Alzheimer’s Disease Using Dual-Tree Complex Wavelet Transform, PCA, and Feed-Forward Neural Network,”
+                    Diagnosis of Alzheimer’s Disease Using Dual-Tree Complex Wavelet Transform, PCA, and Feed-Forward Neural Network,”
                   </span>,” Journal of Healthcare Engineering, vol. 2017, 13 pages, 2017.
                 </h1>
               </div>
@@ -165,11 +165,11 @@ const DevelopPublicatons: React.FC = () => {
           </div>
         </div>
 
-        {/* Second Box - Conferences */}
+        
         <div className="flex flex-col xl:w-1/2">
           <h1 className="text-3xl ml-2 hover:text-blue-200 cursor-pointer mb-2">Conferences</h1>
 
-          {/* ✅ Scroll works correctly here */}
+          
           <div className="w-full max-h-[75vh] overflow-y-auto text-white border-2 p-2 space-y-2 rounded-2xl hover:shadow-md shadow-white scrollbar-hide">
             <div>
               <div className="group hover:scale-[0.98] transition-transform duration-200 flex flex-row items-start text-lg mt-1" onClick={DoubleUNet}>

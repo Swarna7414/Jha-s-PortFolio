@@ -2,16 +2,15 @@ import React, { useState } from "react";
 import { BiLogoGmail } from "react-icons/bi";
 import { TiSocialLinkedin } from "react-icons/ti";
 import { RiTwitterXLine } from "react-icons/ri";
-import { PiMicrosoftOutlookLogo } from "react-icons/pi";
 import { IoMailOutline } from "react-icons/io5";
 import { MdPhone } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
-import "../Styles/style.css";
-import { Details, FaceBook, Gmailto, HandleMeet, Instagram, Linkedin, Mailto, Twitter } from "../Services/Calls";
+import "../src/Styles/style.css";
+import { Details, FaceBook, HandleMeet, Instagram, Linkedin, Mailto, Twitter } from "./Services/Calls";
 
-const Contact:React.FC=()=>{
+const DContact:React.FC=()=>{
 
     const [formdata,setformdata]=useState<Details>({
         name:"",
@@ -87,8 +86,7 @@ const Contact:React.FC=()=>{
                     </div>
 
                     <div className="flex flex-row gap-11 items-center text-4xl ml-4 mt-8 justify-between">
-                        <BiLogoGmail className="rounded-full border-2 p-2 hover:bg-white hover:text-black cursor-pointer" onClick={Gmailto}/>
-                        <PiMicrosoftOutlookLogo className="rounded-full border-2 p-2 hover:bg-white hover:text-black cursor-pointer" onClick={Mailto}/>
+                        <BiLogoGmail className="rounded-full border-2 p-2 hover:bg-white hover:text-black cursor-pointer" onClick={Mailto}/>
                         <TiSocialLinkedin className="rounded-full border-2 p-2 hover:bg-white hover:text-black cursor-pointer" onClick={Linkedin}/>
                         <RiTwitterXLine className="rounded-full border-2 hover:bg-white hover:text-black p-2 cursor-pointer" onClick={Twitter}/>
                         <FaFacebookF className="rounded-full border-2 p-2 hover:bg-white hover:text-black cursor-pointer" onClick={FaceBook}/>
@@ -126,7 +124,7 @@ const Contact:React.FC=()=>{
                                     </div>
                                 </label>
                             </div>
-                            <button type="submit" className="bg-white text-xl text-black w-full font-semibold rounded-2xl p-3 cursor-pointer hover:shadow-md hover:scale-101 hover:shadow-white duration-100 transition">Send</button>
+                            <button type="submit" className="bg-white text-xl text-black w-full font-semibold rounded-2xl p-3 cursor-pointer">Send</button>
                         </form>
                     </div> 
                 </div>
@@ -134,4 +132,4 @@ const Contact:React.FC=()=>{
         </section>
     );
 }
-export default Contact;
+export default DContact;
