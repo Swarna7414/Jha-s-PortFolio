@@ -4,67 +4,65 @@ import { FaRegDotCircle } from "react-icons/fa";
 import { FaCircleDot } from "react-icons/fa6";
 import { GoGoal } from "react-icons/go";
 import { FaLocationDot } from "react-icons/fa6";
-import "../Styles/component.css";
-import { ImageCELF, InternationalEndoscopy, Medico, MedicoPoly, Standfordtalk } from "../Services/WorkshopLinks";
 
-const WorkShops:React.FC=()=>{
+const DContact:React.FC=()=>{
 
     return(
         <section className="h-full">
             <h1 className="text-center text-4xl font-bold">WorkShops & Research Talks</h1>
             <div className="flex flex-col xl:flex-row  justify-between gap-5 mt-7 p-5 h-full w-full">
-                <div className="w-full xl:w-6/12 h-1/4 border-2 p-3 rounded-2xl group hover:shadow-md hover:shadow-white cursor-pointer">
-                    <div className="ml-4 flex flex-row items-center gap-2 text-2xl font-semibold group-hover:text-blue-300 duration-200">
+                <div className="w-full xl:w-6/12 h-1/4 border-2 p-3 rounded-2xl">
+                    <div className=" ml-4 flex flex-row items-center gap-2 text-2xl font-semibold">
                         <GoGoal className="mt-1.5"/>
                         <h1>WorkShops</h1>
                     </div>
                     <div>
-                        <div className="flex flex-row items-center mt-5 hover:text-blue-200 hover:underline hover:underline-offset-6 transition duration-300" onClick={Medico}>
+                        <div className="flex flex-row items-center mt-5">
                             <FaRegDotCircle/>
                             <h1 className="ml-4">Medico: Transparency in Medical Image Segmentation</h1>
                         </div>
 
-                        <div className="flex flex-row items-center mt-5 hover:text-blue-200 hover:underline hover:underline-offset-6 transition duration-300" onClick={MedicoPoly}>
+                        <div className="flex flex-row items-center mt-5">
                             <FaRegDotCircle/>
                             <h1 className="ml-4">Medico automatic polyp segmentation challenge</h1>
                         </div>
 
-                        <div className="flex flex-row items-center mt-5 hover:text-blue-200 hover:underline hover:underline-offset-6 transition duration-300">
+                        <div className="flex flex-row items-center mt-5">
                             <FaRegDotCircle/>
                             <h1 className="ml-4">EndoTect Challenge</h1>
                         </div>
 
-                        <div className="flex flex-row items-center mt-5 hover:text-blue-200 hover:underline hover:underline-offset-6 transition duration-300" onClick={InternationalEndoscopy}>
+                        <div className="flex flex-row items-center mt-5">
                             <FaRegDotCircle className="text-2xl"/>
                             <h1 className="ml-4">3rd International Endoscopy Computer Vision
                               Challenge and Workshop.(EndoCV2021)</h1>
                         </div>
 
-                        <div className="flex flex-row items-center mt-5 hover:text-blue-200 hover:underline hover:underline-offset-6 transition duration-300" onClick={ImageCELF}>
+                        <div className="flex flex-row items-center mt-5">
                             <FaRegDotCircle/>
                             <h1 className="ml-4">ImageCLEF</h1>
                         </div>
                     </div>
                 </div>
                 <div className="w-full h-screen flex flex-col gap-y-1.5">
-                    <div className="flex flex-row items-center ml-8 text-3xl font-semibold gap-2.5 hover:text-blue-300">
+                    <div className="flex flex-row items-center ml-8 text-3xl font-semibold gap-2.5">
                         <GrWorkshop className="mt-2"/>
-                        <h1 className="cursor-pointer duration-300">My Research Talks</h1>
+                        <h1>My Research Talks</h1>
                     </div>
 
-                    <div className="h-full w-full flex flex-col gap-y-0.5 border-2 rounded-2xl p-3 overflow-y-auto cursor-pointer hover:shadow-lg hover:shadow-white">
+                    <div className="h-full w-full flex flex-col gap-y-0.5 border-2 rounded-2xl p-3 overflow-y-auto">
                         {/**First Row */}
-                        <div className="flex flex-col space-y-1 group" onClick={Standfordtalk}>
-                            <div className="flex flex-row items-center gap-2 group-hover:text-blue-200">
+                        <div className="flex flex-col space-y-1">
+                            <div className="flex flex-row items-center gap-2">
                                 <FaCircleDot className="mt-0.5"/>
                                 <h1 className="font-semibold">From Data to Diagnosis – Advancing Medical Imaging with Curated Dataset and AI Algorithms</h1>
                             </div>
 
-                            <div className="flex flex-row items-center gap-2 group-hover:text-blue-100">
+                            <div className="flex flex-row items-center gap-2">
                                 < FaLocationDot className="mt-0.5"/>
                                 <h1>Stanford MedAI, 2025</h1>
                             </div>
-                            <p className="text-justify ml-1 font-extralight group-hover:text-blue-50">
+                            <p className="text-justify ml-1 font-extralight">
                                 Accurate medical diagnosis significantly relies on high-quality medical imaging data and 
                                 advanced computational algorithms. Despite remarkable progress, diagnostic accuracy in radiology
                                 and gastrointestinal (GI) endoscopy faces persistent challenges, including data scarcity, 
@@ -83,17 +81,17 @@ const WorkShops:React.FC=()=>{
                             <hr className="border-t border-blue-200 my-4 transform scale-y-50" />
                         </div>
 
-                        <div className="flex flex-col space-y-1 group">
-                            <div className="flex flex-row items-center gap-2 group-hover:text-blue-200">
+                        <div className="flex flex-col space-y-1">
+                            <div className="flex flex-row items-center gap-2">
                                 <FaCircleDot className="mt-0.5"/>
                                 <h1 className="font-semibold">Beyond Human Vision: Transforming Radiology and GI Endoscopy with AI</h1>
                             </div>
 
-                            <div className="flex flex-row items-center gap-2 group-hover:text-blue-100">
+                            <div className="flex flex-row items-center gap-2">
                                 < FaLocationDot className="mt-0.5"/>
                                 <h1> Brown Bag Series, University of South Dakota, 2024</h1>
                             </div>
-                            <p className="text-justify ml-1 font-extralight group-hover:text-blue-50">
+                            <p className="text-justify ml-1 font-extralight">
                                 In this talk, I explored the transformative impact of artificial intelligence in radiology 
                                 and gastrointestinal (GI) endoscopy. AI-powered models are not just augmenting human expertise 
                                 but also redefining diagnostic accuracy, efficiency, and accessibility in medical imaging. I 
@@ -105,17 +103,17 @@ const WorkShops:React.FC=()=>{
                             <hr className="border-t border-blue-200 my-4 transform scale-y-50" />
                         </div>
 
-                        <div className="flex flex-col space-y-1 group">
-                            <div className="flex flex-row items-center gap-2 group-hover:text-blue-200">
+                        <div className="flex flex-col space-y-1">
+                            <div className="flex flex-row items-center gap-2">
                                 <FaCircleDot className="mt-0.5"/>
                                 <h1 className="font-semibold">Transforming Medical AI: Advancing Deep Learning for Precision Diagnosis & Image Segmentation</h1>
                             </div>
 
-                            <div className="flex flex-row items-center gap-2 group-hover:text-blue-100">
+                            <div className="flex flex-row items-center gap-2">
                                 < FaLocationDot className="mt-0.5"/>
                                 <h1>City University of NewYork, College of Staten Island, 2024</h1>
                             </div>
-                            <p className="text-justify font-extralight group-hover:text-blue-50">
+                            <p className="text-justify font-extralight">
                                 I presented my latest research focusing on AI-driven innovations in medical imaging, particularly in radiology and 
                                 gastrointestinal (GI) endoscopy. My work introduces novel deep learning architectures, including TransNetR, a 
                                 transformer-based model for polyp segmentation with strong out-of-distribution generalization, and SynergyNet, 
@@ -130,17 +128,17 @@ const WorkShops:React.FC=()=>{
                             <hr className="border-t border-blue-200 my-4 transform scale-y-50" />
                         </div>
 
-                        <div className="flex flex-col space-y-1 group">
-                            <div className="flex flex-row items-center gap-2 group-hover:text-blue-200">
+                        <div className="flex flex-col space-y-1">
+                            <div className="flex flex-row items-center gap-2">
                                 <FaCircleDot className="mt-0.5"/>
                                 <h1 className="font-semibold">Biopsy Free early detection of liver diseases using AI</h1>
                             </div>
 
-                            <div className="flex flex-row items-center gap-2 group-hover:text-blue-200">
+                            <div className="flex flex-row items-center gap-2">
                                 < FaLocationDot className="mt-0.5"/>
                                 <h1>Northwestern University, Department of Radiology, USA, 2023</h1>
                             </div>
-                            <p className="text-justify ml-1 font-extralight group-hover:text-blue-50">
+                            <p className="text-justify ml-1 font-extralight">
                                 Traditional liver disease diagnosis often relies on invasive biopsy procedures, 
                                 which pose risks and discomfort to patients. My work introduces AI-powered imaging solutions 
                                 that leverage deep learning models to analyze radiological scans, enabling non-invasive, 
@@ -157,17 +155,17 @@ const WorkShops:React.FC=()=>{
                             <hr className="border-t border-blue-200 my-4 transform scale-y-50" />
                         </div>
 
-                        <div className="flex flex-col space-y-1 group">
-                            <div className="flex flex-row items-center gap-2 group-hover:text-blue-200">
+                        <div className="flex flex-col space-y-1">
+                            <div className="flex flex-row items-center gap-2">
                                 <FaCircleDot className="mt-0.5"/>
                                 <h1 className="font-semibold">The Future is Here: Deep Learning Algorithms Can Reduce the Miss-Rate in Colonoscopy</h1>
                             </div>
 
-                            <div className="flex flex-row items-center gap-2 group-hover:text-blue-100">
+                            <div className="flex flex-row items-center gap-2">
                                 < FaLocationDot className="mt-0.5"/>
                                 <h1>MIPG Seminar Series 42 – Fall, University of Pennsylvania, USA, 2022</h1>
                             </div>
-                            <p className="text-justify ml-1 font-light group-hover:text-blue-50">
+                            <p className="text-justify ml-1 font-light">
                                 In this seminar, I discussed the role of deep learning in enhancing polyp detection and 
                                 reducing the miss rate in colonoscopy, a critical challenge in gastrointestinal endoscopy. 
                                 Traditional colonoscopy procedures rely on expert visual inspection, which can result in 
@@ -183,17 +181,17 @@ const WorkShops:React.FC=()=>{
                             <hr className="border-t border-blue-200 my-4 transform scale-y-50" />
                         </div>
 
-                        <div className="flex flex-col space-y-1 group">
-                            <div className="flex flex-row items-center gap-2 group-hover:text-blue-200">
+                        <div className="flex flex-col space-y-1">
+                            <div className="flex flex-row items-center gap-2">
                                 <FaCircleDot className="mt-0.5"/>
                                 <h1 className="font-semibold">Khwopa to Northwestern: My PhD Journey and Some Personal Reflections</h1>
                             </div>
 
-                            <div className="flex flex-row items-center gap-2 group-hover:text-blue-100">
+                            <div className="flex flex-row items-center gap-2">
                                 < FaLocationDot className="mt-0.5"/>
                                 <h1>Khowpa Engineering College, Purbanchal University, Bhaktapur, Nepal, 2022.</h1>
                             </div>
-                            <p className="text-justify ml-1 font-light group-hover:text-blue-50">
+                            <p className="text-justify ml-1 font-light">
                                 I share my academic and professional journey from Khwopa Engineering College in Nepal to 
                                 Northwestern University in the USA. This journey has been shaped by perseverance, passion 
                                 for artificial intelligence in medical imaging, and a commitment to impactful research. 
@@ -215,4 +213,4 @@ const WorkShops:React.FC=()=>{
         </section>
     );
 }
-export default WorkShops;
+export default DContact;

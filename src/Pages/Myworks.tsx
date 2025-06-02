@@ -1,10 +1,8 @@
-import React from "react";
-
-const MyWorks:React.FC=()=>{
+const Myworks:React.FC=()=>{
     return(
         <div>
-            <h1 className="mt-52">My Works</h1>
+            <h1>My Works</h1>
         </div>
     );
 }
-export default MyWorks;
+export default Myworks;
