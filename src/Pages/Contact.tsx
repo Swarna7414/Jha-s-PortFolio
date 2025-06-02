@@ -63,7 +63,7 @@ const Contact:React.FC=()=>{
             <h1 className="text-center font-bold text-4xl">Let's Get In Touch</h1>
             <div className="flex flex-col lg:flex-row gap-8">
                 <div className="order-2 lg:order-1 h-full lg:w-1/2 p-2 mt-5 flex flex-col">
-                    <h1 className="font-bold text-4xl text-blue-300">Contect Me</h1>
+                    <h1 className="font-bold text-4xl text-blue-300 cursor-pointer hover:text-blue-400">Contect Me</h1>
                     <div className="flex flex-col mt-5 ml-5 gap-y-8">
                         <div className="flex flex-row items-center  hover:underline hover:underline-offset-6 cursor-pointer">
                             <IoMailOutline className="text-3xl mr-2"/>

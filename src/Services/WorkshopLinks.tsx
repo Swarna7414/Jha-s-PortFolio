@@ -13,3 +13,7 @@ export const InternationalEndoscopy=()=>{
 export const ImageCELF=()=>{
     window.open("https://www.imageclef.org/2023/medical/vqa");
 }
+
+export const Standfordtalk=()=>{
+    window.open("https://www.youtube.com/watch?v=7wb9uj9CG0I");
+}
