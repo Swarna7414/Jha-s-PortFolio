@@ -77,7 +77,7 @@ const Contact:React.FC=()=>{
 
                         <div className="flex flex-row items-center cursor-pointer">
                             <FaLocationDot className="text-3xl mr-2"/>
-                            <h1 className="text-2xl hover-white-shadow">Department of Computer Science, <br />414 E. Clark Street, <br />Vermillion, SD 5706</h1>
+                            <h1 className="text-2xl hover-white-shadow">Department of Computer Science, <br />414 E. Clark Street, <br />Vermillion, SD 57069</h1>
                         </div>
 
                         <div className="flex flex-row items-center justify-center cursor-pointer text-black hover:font-bold duration-300 transition-all">
