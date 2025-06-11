@@ -1,8 +1,10 @@
 const Professional:React.FC=()=>{
     return(
-        <div>
-            <h1>My Works</h1>
-        </div>
+        <section className="max-h-screen">
+            <div>
+                <h1>THis is the Professional</h1>
+            </div>
+        </section>
     );
 }
 export default Professional;

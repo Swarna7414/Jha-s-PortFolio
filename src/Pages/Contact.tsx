@@ -77,7 +77,7 @@ const Contact:React.FC=()=>{
 
                         <div className="flex flex-row items-center cursor-pointer">
                             <FaLocationDot className="text-3xl mr-2"/>
-                            <h1 className="text-2xl hover-white-shadow">Department of Computer Science, <br />414 E. Clark Street, <br />Vermillion, SD 5706</h1>
+                            <h1 className="text-2xl hover-white-shadow">Department of Computer Science, <br />414 E. Clark Street, <br />Vermillion, SD 57069</h1>
                         </div>
 
                         <div className="flex flex-row items-center justify-center cursor-pointer text-black hover:font-bold duration-300 transition-all">
@@ -113,7 +113,7 @@ const Contact:React.FC=()=>{
                                 <label className="text-2xl">E-Mail
                                     <div className="flex flex-row items-center mt-1">
                                         <input name="email" type="email" value={formdata.email} onChange={HandleChange} required
-                                        className="p-1.5 border-2 w-full rounded-lg focus:shadow-white focus:shadow-md"/>
+                                        className="p-1.5 border-2 w-full rounded-lg focus:shadow-white focus:shadow-md focus:bg-black"/>
                                     </div>
                                 </label>
                             </div>
