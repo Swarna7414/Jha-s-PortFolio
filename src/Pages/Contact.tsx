@@ -113,7 +113,7 @@ const Contact:React.FC=()=>{
                                 <label className="text-2xl">E-Mail
                                     <div className="flex flex-row items-center mt-1">
                                         <input name="email" type="email" value={formdata.email} onChange={HandleChange} required
-                                        className="p-1.5 border-2 w-full rounded-lg focus:shadow-white focus:shadow-md"/>
+                                        className="p-1.5 border-2 w-full rounded-lg focus:shadow-white focus:shadow-md focus:bg-black"/>
                                     </div>
                                 </label>
                             </div>
