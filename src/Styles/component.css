@@ -2,3 +2,63 @@
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
   transition: text-shadow 0.3s ease-in-out;
 }
+
+.cursive-dancing {
+  font-family: 'Dancing Script', cursive;
+}
+
+.cursive-vibes {
+  font-family: 'Great Vibes', cursive;
+}
+
+
+.cursive-pacifico {
+  font-family: 'Pacifico', cursive;
+}
+
+.cursive-italianno {
+  font-family: 'Italianno', cursive;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* Scrollbar track */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #93c5fd; /* Tailwind blue-300 */
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #60a5fa;
+}
+
+
+.scrollbar-hide::-webkit-scrollbar {
+  width: 0px;
+}
+
+.scrollbar-hide:hover::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-hide {
+  scrollbar-width: none;
+}
+
+.scrollbar-hide:hover {
+  scrollbar-width: thin;
+  scrollbar-color: #93c5fd transparent;
+}

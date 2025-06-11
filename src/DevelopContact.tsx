@@ -1,24 +1,24 @@
 import React from "react";
-import "../Styles/style.css";
-import CIRRMRI600 from "../assets/Dataset/CIRRMRI600.png"
-import PenSegData from "../assets/Dataset/PanSegData​.png"
-import PeriPancreatic from "../assets/Dataset/Peri-Pancreatic Edema Dataset​.png"
-import Gastrovision from "../assets/Dataset/Gastrovision.png";
-import PolyGenSequence from "../assets/Dataset/PolypGen Video Sequence Dataset.png";
-import PolygenFrame from "../assets/Dataset/PolypGen Still Frames.png";
-import ImageCELF from "../assets/Dataset/ImageCLEFmed-MEDVQA-GI-2023 .png";
-import KsvirSEG from "../assets/Dataset/Kvasir-SEG.png";
-import EndoCv2021 from "../assets/Dataset/Endocv 2021.png"
-import KvasirInstrument from "../assets/Dataset/kvasirinstrument.png";
-import Kvasirsessile from "../assets/Dataset/Kvasir-sessile.png"; 
-import Endotact2020 from "../assets/Dataset/Endotect 2020 Challenge Dataset.png";
-import Medicopolypo from "../assets/Dataset/Medico automatic polyp segmentation dataset.png";
-import Kvasir from "../assets/Dataset/kvasir-capsule.png";
-import KvasirCapsule from "../assets/Dataset/KvasirCapsule-SEG.png";
-import { CIRRMRI600Link, CLEFmedLink, EndoCVLink, EndoTact2021, GastroVisionLink, KsvirSEGLink, KvasirCapsuleLink, KvasircapsuleLink, KvasirInstrumentLink, KvasirsessileLink, MedicopolypoLink, PenSegDataLink, PolypGenStillFramesLink, PolypGenVideoSequenceLink } from "../Services/Dataset";
+import "./Styles/style.css";
+import CIRRMRI600 from "../src/assets/Dataset/CIRRMRI600.png"
+import PenSegData from "../src/assets/Dataset/PanSegData​.png"
+import PeriPancreatic from "../src/assets/Dataset/Peri-Pancreatic Edema Dataset​.png"
+import Gastrovision from "../src/assets/Dataset/Gastrovision.png";
+import PolyGenSequence from "../src/assets/Dataset/PolypGen Video Sequence Dataset.png";
+import PolygenFrame from "../src/assets/Dataset/PolypGen Still Frames.png";
+import ImageCELF from "../src/assets/Dataset/ImageCLEFmed-MEDVQA-GI-2023 .png";
+import KsvirSEG from "../src/assets/Dataset/Kvasir-SEG.png";
+import EndoCv2021 from "../src/assets/Dataset/Endocv 2021.png"
+import KvasirInstrument from "../src/assets/Dataset/kvasirinstrument.png";
+import Kvasirsessile from "../src/assets/Dataset/Kvasir-sessile.png"; 
+import Endotact2020 from "../src/assets/Dataset/Endotect 2020 Challenge Dataset.png";
+import Medicopolypo from "../src/assets/Dataset/Medico automatic polyp segmentation dataset.png";
+import Kvasir from "../src/assets/Dataset/kvasir-capsule.png";
+import KvasirCapsule from "../src/assets/Dataset/KvasirCapsule-SEG.png";
+import { CIRRMRI600Link, CLEFmedLink, EndoCVLink, EndoTact2021, GastroVisionLink, KsvirSEGLink, KvasirCapsuleLink, KvasircapsuleLink, KvasirInstrumentLink, KvasirsessileLink, MedicopolypoLink, PenSegDataLink, PolypGenStillFramesLink, PolypGenVideoSequenceLink } from "./Services/Dataset";
 
 
-const DataSet: React.FC = () => {
+const DevelopConstact: React.FC = () => {
   return (
     <section className="p-10 h-screen bg-black">
       <div className="flex flex-col h-full">
@@ -329,4 +329,4 @@ const DataSet: React.FC = () => {
   );
 };
 
-export default DataSet;
+export default DevelopConstact;

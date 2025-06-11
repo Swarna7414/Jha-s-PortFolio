@@ -1,10 +1,10 @@
-import React from "react";
-
 const Professional:React.FC=()=>{
     return(
-        <div>
-            <h1 className="mt-52">Professional Carrer</h1>
-        </div>
+        <section className="max-h-screen">
+            <div>
+                <h1>THis is the Professional</h1>
+            </div>
+        </section>
     );
 }
 export default Professional;

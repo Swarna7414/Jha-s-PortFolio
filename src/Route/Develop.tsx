@@ -19,27 +19,28 @@ const navLinkClasses = ({ isActive }: { isActive: boolean }) =>
   return (
     <div>
       
-      <header className="w-full bg-black p-5 sticky top-0 z-50 flex flex-row items-center justify-between">
+    <header className="w-full bg-black p-5 sticky top-0 z-50 flex flex-row items-center justify-between">
         
-        <div className="group">
-          <h1 className="text-white text-2xl hover:cursor-pointer transition-all duration-300 group-hover:font-bold">
-            <span className="transition-all duration-300 group-hover:text-blue-500">D</span>
-            ebesh <span className="transition-all duration-300 group-hover:text-blue-500">J</span>ha
-          </h1>
-        </div>
+      <div className="group">
+        <h1 className="text-white text-4xl font-cursive hover:cursor-pointer transition-all duration-300 group-hover:font-bold italic cursive-vibes">
+        <span className="transition-all duration-300 group-hover:text-blue-500">D</span>
+        ebesh{" "}
+        <span className="transition-all duration-300 group-hover:text-blue-500">J</span>
+        ha
+      </h1>
+    </div>
 
         
         <div className="hidden xl:flex flex-row gap-8 text-md">
-          <NavLink to="/" className={navLinkClasses}>Home</NavLink>
+          <NavLink to="/home" className={navLinkClasses}>Home</NavLink>
           <NavLink to="/publication" className={navLinkClasses}>Publications</NavLink>
           <NavLink to="/workshop" className={navLinkClasses}>Workshops & Talks</NavLink>
           <NavLink to="/professional" className={navLinkClasses}>Professional Career</NavLink>
           <NavLink to="/dataset" className={navLinkClasses}>DataSet</NavLink>
           <NavLink to="/myworks" className={navLinkClasses}>MyWorks</NavLink>
           <NavLink to="/blogs" className={navLinkClasses}>Blogs</NavLink>
-          <NavLink to="/contact" className="bg-white px-2.5 py-2 rounded-sm font-medium hover:scale-105 hover:bg-gray-200 hover:shadow-blue-300">Contact Me</NavLink>
+          <NavLink to="/contact" className="shadow-sm shadow-blue-500 px-2.5 py-2 rounded-2xl font-medium hover:scale-105 hover:bg-gray-200 hover:shadow-blue-300 text-white hover:text-blue-400">Contact Me</NavLink>
         </div>
-
         
         <div className="xl:hidden">
           <button
