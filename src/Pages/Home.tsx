@@ -1,8 +1,11 @@
 import React from 'react';
 import smallscreen from '../assets/smallscreen.png';
-import BigScreenR from '../assets/Home_Picture-removebg-preview.png';
+import "../Styles/global.css"
+import BigScreenRe from '../assets/Bigscreen-preview.png';
 import "../Styles/animation.css";
 import "../Styles/component.css";
+import "../Styles/global.css";
+import cursorImage from '../assets/cursor.png';
 import { FaGoogleScholar } from "react-icons/fa6";
 import { SiResearchgate } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
@@ -18,7 +21,7 @@ import { Clarivate, Dblb, Github, GoogleScholr, Linkedin, Orcid, ResearchGate, S
 
 const Develop: React.FC = () => {
   return (
-    <section className="min-h-screen bg-black flex flex-col xl:flex-row scrollbar-hide">
+    <section className="min-h-screen flex flex-col xl:flex-row scrollbar-hide">
       
       
       <div className="xl:w-1/2 w-full">
@@ -30,7 +33,7 @@ const Develop: React.FC = () => {
         />
         
         <img
-          src={BigScreenR}
+          src={BigScreenRe}
           alt="Profile Large"
           className="hidden xl:block w-full h-full object-cover"
           style={{ minHeight: '100%' }}
@@ -41,18 +44,18 @@ const Develop: React.FC = () => {
       <div className="xl:w-1/2 w-full flex flex-col cursor-pointer">
         <div className="flex flex-col p-4 min-h-screen">
           
-          <h1 className="text-3xl md:text-4xl font-bold text-white mb-2 ml-2.5">
+          <h1 className="text-3xl md:text-4xl font-bold text-black mb-2 ml-2.5">
             Hello I'm{' '}
             <span
-              className="group inline-flex items-center cursor-pointer hover:text-blue-400 font-bold"
-              style={{ textShadow: '2px 2px 4px rgba(0, 0, 255, 0.4)' }}>
-                Dr. Debbash Jha
+              className="group inline-flex items-center cursor-pointer hover:text-emerald-400  duration-300 font-bold hover-text-shadow"
+              >
+                Dr. Debesh Jha
               <span className="ml-2 wave-on-hover">👋</span>
             </span>
           </h1>
 
 
-          <div className="border-2 border-black p-4 rounded-md overflow-auto text-white duration-200">
+          <div className="p-4 text-black custom-cursor" style={{ cursor: `url(${cursorImage}) 16 16, auto` }}>
             <p className="text-lg font-medium text-justify leading-relaxed">
               I'm a Visiting Assistant Professor in the Department of Computer Science at the University of South Dakota. 
               Recognized among the world’s top 2% scientists by Stanford University and Elsevier ranking for contributions 
@@ -75,54 +78,54 @@ const Develop: React.FC = () => {
             </p>
             <div className='mt-4 flex flex-row-reverse sm:gap-8 text-4xl gap-1.5 self-center'>
 
-              <div className="border rounded-full hover:border-blue-500 hover:shadow-sm hover:shadow-blue-500">
+              <div className="border rounded-full hover:border-emerald-500 hover:shadow-sm hover:shadow-emerald-500">
                 <RiTwitterXLine
-                  className="text-4xl sm:text-4xl p-2 sm:p-1.5 bg-black text-white rounded-full duration-300 hover:border-blue-300 cursor-pointer hover:bg-white hover:text-black"
+                  className="text-4xl sm:text-4xl p-2 sm:p-1.5 text-black rounded-full duration-300 hover:border-emerald-300 cursor-pointer  hover:text-emerald-500"
                   onClick={Twitter}/>
               </div>
 
-              <div className="border rounded-full hover:border-blue-500 hover:shadow-blue-500">
+              <div className="border rounded-full hover:border-emerald-500 hover:shadow-sm hover:shadow-emerald-500">
                 <FaLinkedin
-                  className="text-4xl sm:text-4xl p-2 sm:p-1.5 bg-black text-white rounded-full duration-300 hover:border-blue-300 cursor-pointer hover:bg-white hover:text-black"
+                  className="text-4xl sm:text-4xl p-2 sm:p-1.5 text-black rounded-full duration-300 hover:border-emerald-300 cursor-pointer hover:text-emerald-500"
                   onClick={Linkedin}/>
               </div>
 
-              <div className="border rounded-full hover:border-blue-500 hover:shadow-blue-500">
+              <div className="border rounded-full hover:border-emerald-500 hover:shadow-sm hover:shadow-emerald-500">
                 <FaGithub
-                  className="text-4xl sm:text-4xl p-2 sm:p-1.5 bg-black text-white rounded-full duration-300 hover:border-blue-300 cursor-pointer hover:bg-white hover:text-black"
+                  className="text-4xl sm:text-4xl p-2 sm:p-1.5 text-black rounded-full duration-300 hover:border-emerald-300 cursor-pointer hover:text-emerald-500"
                   onClick={Github}/>
               </div>
 
-              <div className="border rounded-full hover:border-blue-500 hover:shadow-blue-500">
+              <div className="border rounded-full hover:border-emerald-500 hover:shadow-sm hover:shadow-emerald-500">
                 <SiClarivate
-                  className="text-4xl sm:text-4xl p-2 sm:p-1.5 bg-black text-white rounded-full duration-300 hover:border-blue-300 cursor-pointer hover:bg-white hover:text-black"
+                  className="text-4xl sm:text-4xl p-2 sm:p-1.5 text-black rounded-full duration-300 hover:border-emerald-300 cursor-pointer hover:text-emerald-500"
                   onClick={Clarivate}/>
               </div>
 
-              <div className="border rounded-full hover:border-blue-500 hover:shadow-blue-500">
+              <div className="border rounded-full hover:shadow-sm hover:border-emerald-500 hover:shadow-emerald-500">
                 <SiOrcid
-                  className="text-4xl sm:text-4xl p-2 sm:p-1.5 bg-black text-white rounded-full duration-300 hover:border-blue-300 cursor-pointer hover:bg-white hover:text-black"
+                  className="text-4xl sm:text-4xl p-2 sm:p-1.5 rounded-full duration-300 hover:border-emerald-300 cursor-pointer hover:text-emerald-500"
                   onClick={Orcid}/>
               </div>
 
-              <div className="border rounded-full hover:border-blue-500 hover:shadow-blue-500">
+              <div className="border rounded-full hover:shadow-sm hover:border-emerald-500 hover:shadow-emerald-500">
                 <SiDblp
-                  className="text-4xl sm:text-4xl p-2 sm:p-1.5 bg-black text-white rounded-full duration-300 hover:border-blue-300 cursor-pointer hover:bg-white hover:text-black"
+                  className="text-4xl sm:text-4xl p-2 sm:p-1.5 text-black rounded-full duration-300 hover:border-blue-300 cursor-pointer hover:text-emerald-500"
                   onClick={Dblb}/>
               </div>
-              <div className="border rounded-full hover:border-blue-500 hover:shadow-blue-500">
+              <div className="border rounded-full hover:shadow-sm hover:border-emerald-500 hover:shadow-emerald-500">
                 <SiResearchgate
-                  className="text-4xl sm:text-4xl p-2 sm:p-1.5 bg-black text-white rounded-full duration-300 hover:border-blue-300 cursor-pointer hover:bg-white hover:text-black"
+                  className="text-4xl sm:text-4xl p-2 sm:p-1.5 text-black rounded-full duration-300 hover:border-emerald-300 cursor-pointer hover:text-emerald-500"
                   onClick={ResearchGate}/>
               </div>
-              <div className="border rounded-full hover:border-blue-500 hover:shadow-blue-500">
+              <div className="border rounded-full hover:shadow-sm hover:border-emerald-500 hover:shadow-emerald-500">
                 <SiSemanticscholar
-                  className="text-4xl sm:text-4xl p-2 sm:p-1.5 bg-black text-white rounded-full duration-300 hover:border-blue-300 cursor-pointer hover:bg-white hover:text-black"
+                  className="text-4xl sm:text-4xl p-2 sm:p-1.5 text-black rounded-full duration-300 hover:border-emerald-300 cursor-pointer hover:text-emerald-500"
                   onClick={Semanticscholar}/>
               </div>
-              <div className="border rounded-full hover:border-blue-500 hover:shadow-blue-500">
+              <div className="border rounded-full hover:shadow-sm hover:border-emerald-500 hover:shadow-emerald-500">
                 <FaGoogleScholar
-                  className="text-4xl sm:text-4xl p-2 sm:p-1.5 bg-black text-white rounded-full duration-300 hover:border-blue-300 cursor-pointer hover:bg-white hover:text-black"
+                  className="text-4xl sm:text-4xl p-2 sm:p-1.5 text-black rounded-full duration-300 hover:border-emerald-300 cursor-pointer hover:text-emerald-500"
                   onClick={GoogleScholr}/>
               </div>
             </div>

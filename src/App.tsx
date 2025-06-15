@@ -9,7 +9,7 @@ import DataSet from "./Pages/DataSet";
 import MyWorks from "./Pages/Myworks";
 import Blogs from "./Pages/Blogs";
 import Contact from "./Pages/Contact";
-import Navbar from "./Route/Develop";
+import Navbar from "./Route/Navbar";
 import DContact from "./DevelopContact";
 
 
