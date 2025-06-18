@@ -19,13 +19,13 @@ const navLinkClasses = ({ isActive }: { isActive: boolean }) =>
   return (
     <div>
       
-      <header className="w-full p-5 sticky top-0 z-50 flex flex-row items-center justify-between shadow-md shadow-emerald-100" style={{ backgroundColor: 'white' }}>
+      <header className="w-full p-5 fixed top-0 z-50 flex flex-row items-center justify-between bg-green-200/50 backdrop-blur-sm shadow-md shadow-emerald-100">
         
       <div className="group">
         <h1 className="text-black text-4xl font-cursive hover:cursor-pointer transition-all duration-300 group-hover:font-bold italic cursive-vibes">
-        <span className="transition-all duration-300 group-hover:text-emerald-400 text-emerald-200 font-semibold">D</span>
+        <span className="transition-all duration-300 group-hover:text-emerald-600 text-emerald-400 font-semibold">D</span>
         ebesh{" "}
-        <span className="transition-all duration-300 group-hover:text-emerald-400 text-emerald-200 font-semibold">J</span>
+        <span className="transition-all duration-300 group-hover:text-emerald-600 text-emerald-400 font-semibold">J</span>
         ha
       </h1>
     </div>
@@ -39,12 +39,12 @@ const navLinkClasses = ({ isActive }: { isActive: boolean }) =>
           <NavLink to="/dataset" className={navLinkClasses}>DataSet</NavLink>
           <NavLink to="/myworks" className={navLinkClasses}>MyWorks</NavLink>
           <NavLink to="/blogs" className={navLinkClasses}>Blogs</NavLink>
-          <NavLink to="/contact" className="shadow-sm shadow-emerald-500 px-2.5 py-2 rounded-md font-medium hover:scale-105 hover:shadow-emerald-200 text-black hover:text-emerald-300 duration-300">Contact Me</NavLink>
+          <NavLink to="/contact" className="shadow-sm shadow-emerald-500 px-2.5 py-2 rounded-md font-medium hover:scale-105 hover:shadow-emerald-200 text-black hover:text-white duration-300">Contact Me</NavLink>
         </div>
         
         <div className="xl:hidden">
           <button
-            className="text-emerald-400 text-2xl focus:outline-none"
+            className="text-black text-2xl focus:outline-none"
             onClick={() => setMenuOpen(!menuOpen)}
           >
             {menuOpen ? "✕" : "☰"}
@@ -58,8 +58,8 @@ const navLinkClasses = ({ isActive }: { isActive: boolean }) =>
           menuOpen ? "translate-x-0" : "translate-x-full"
         }` }
       >
-        <div className="flex flex-col gap-4 text-white text-md p-6 pt-[80px] bg-white">
-          <NavLink to="/" className={navLinkClasses}>Home</NavLink>
+        <div className="flex flex-col gap-4 text-white text-md p-6 pt-[80px] bg-emerald-200/30 h-full backdrop-blur-md z-50">
+          <NavLink to="/home" className={navLinkClasses}>Home</NavLink>
           <NavLink to="/publications" className={navLinkClasses}>Publications</NavLink>
           <NavLink to="/workshops" className={navLinkClasses}>Workshops & Talks</NavLink>
           <NavLink to="/career" className={navLinkClasses}>Professional Career</NavLink>

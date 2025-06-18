@@ -35,14 +35,14 @@
 
 
 ::-webkit-scrollbar-thumb {
-  background: #93c5fd; /* Tailwind blue-300 */
+  background: #62c7af; /* Tailwind blue-300 */
   border-radius: 10px;
   transition: background 0.3s ease;
 }
 
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #60a5fa;
+  background: #62c7af;
 }
 
 
@@ -60,5 +60,12 @@
 
 .scrollbar-hide:hover {
   scrollbar-width: thin;
-  scrollbar-color: #93c5fd transparent;
+  scrollbar-color: #62c7af transparent;
+}
+
+.gradient-header {
+  background: #e2f1ec;
+  background: -webkit-linear-gradient(to right, #e2f1ec, #75dfa5);
+  background: linear-gradient(to right, #e2f1ec, #75dfa5);
+  color: white;
 }
