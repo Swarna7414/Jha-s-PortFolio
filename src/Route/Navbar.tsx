@@ -58,7 +58,7 @@ const navLinkClasses = ({ isActive }: { isActive: boolean }) =>
           menuOpen ? "translate-x-0" : "translate-x-full"
         }` }
       >
-        <div className="flex flex-col gap-4 text-white text-md p-6 pt-[80px] bg-emerald-200/30 h-full backdrop-blur-md z-50">
+        <div className="flex flex-col gap-4 text-white text-md p-6 pt-[80px] bg-emerald-200/30 h-full backdrop-blur-xl z-50">
           <NavLink to="/home" className={navLinkClasses}>Home</NavLink>
           <NavLink to="/publications" className={navLinkClasses}>Publications</NavLink>
           <NavLink to="/workshops" className={navLinkClasses}>Workshops & Talks</NavLink>

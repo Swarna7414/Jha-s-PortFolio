@@ -5,20 +5,20 @@ import { AIRadation, ColonSegNet, DoubleUNet, Expandability, MachineLearningbase
 
 const Blogs:React.FC=()=>{
   return(
-    <section className="p-5 h-screen bg-black">
-      <h1 className="text-center text-4xl font-semibold cursor-pointer hover:text-blue-300 ">Next-Gen AI Blogs</h1>
+    <section className="p-5 h-screen pt-[79px]">
+      <h1 className="text-center text-4xl font-semibold cursor-pointer hover:text-emerald-500 ">Next-Gen AI Blogs</h1>
       <div className="mt-5 max-h-[600px] w-full overflow-auto grid grid-cols-1 xl:grid-cols-2 gap-10 p-5">
         {/**First Grid Box */}
-        <div className="border-[0.5px] h-80 lg:h-60 xl:h-75 w-full rounded-4xl p-2 text-xl group/content hover:shadow-md hover:shadow-white duration-300">
-          <div className="mt-2 ml-2 flex items-center gap-2  shadow-sm hover:shadow-md shadow-blue-400 rounded-2xl px-3 py-1 flex-shrink-0 w-max cursor-progress group/date">
-            <LiaCalendar className="group-hover/date:text-blue-200"/>
+        <div className="border-[0.5px] h-80 lg:h-60 xl:h-75 w-full rounded-4xl p-2 text-xl group/content hover:shadow-md hover:shadow-emerald-400 duration-300">
+          <div className="mt-2 ml-2 flex items-center gap-2 shadow-emerald-300 shadow-sm hover:shadow-md text-black rounded-2xl px-3 py-1 flex-shrink-0 w-max cursor-progress group/date">
+            <LiaCalendar className="group-hover/date:text-emerald-600"/>
             <h1>February 6, 2023</h1>
           </div>
-          <h1 className="mt-3 ml-2 font-bold text-center text-lg group-hover/content:text-blue-200 cursor-pointer white-text-shadow group-hover/content:underline group-hover/content:underline-offset-auto">ColonSegNet for Real-time Polyp Segmentation</h1>
+          <h1 className="mt-3 ml-2 font-bold text-center text-lg group-hover/content:text-emerald-600 cursor-pointer white-text-shadow group-hover/content:underline group-hover/content:underline-offset-auto">ColonSegNet for Real-time Polyp Segmentation</h1>
           <div className="mt-4 overflow-hidden break-words text-sm sm:text-base leading-relaxed">
             <p className="text-justify">Introduction ColonSegNet is a popular lightweight polyp segmentation architecture that has been utilized at an industrial application by NVIDIA for the Clara Holoscan 
               Sample App for colonoscopy polyps’ segmentation. With an image size of 512*512, ColonSegNet achieves a dice coefficient of 82.06% for the polyp segmentation tasks and 
-              achieves average precision of 80.00% for the polyp detection tasks <span className="text-blue-300 cursor-pointer hover:text-blue-400 hover:underline hover:underline-offset-auto" onClick={ColonSegNet}>Readmore...</span></p>
+              achieves average precision of 80.00% for the polyp detection tasks <span className="text-emerald-400 cursor-pointer hover:text-emerald-600 hover:underline hover:underline-offset-auto" onClick={ColonSegNet}>Readmore...</span></p>
           </div>
         </div>
 

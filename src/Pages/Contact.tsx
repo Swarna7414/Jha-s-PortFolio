@@ -121,7 +121,7 @@ const Contact:React.FC=()=>{
                             <div className="space-y-4">
                                 <label className="text-2xl">Message
                                     <div className="flex flex-row items-center mt-1">
-                                        <textarea name="message" value={formdata.message} onChange={HandleChange}
+                                        <textarea name="message" value={formdata.message} onChange={HandleChange} required
                                         className="p-1.5 border-2 w-full h-36 rounded-lg focus:shadow-white focus:shadow-md"/>
                                     </div>
                                 </label>
