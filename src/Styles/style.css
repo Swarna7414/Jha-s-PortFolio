@@ -10,7 +10,7 @@
   background: linear-gradient(to right, #11FFBD, #AAFFA9);
 }
 .bg-button:hover {
-  background: #29ffb8 !important; /* emerald-500 in hex */
+  background: #29ffb8 !important;
 }
 .text-color {
   background: linear-gradient(to right, #11FFBD, #AAFFA9);
