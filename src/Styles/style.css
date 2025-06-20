@@ -1,3 +1,31 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+:root {
+  --white-grad-1: linear-gradient(to top, #e9f0e6 0%, #eef1f5 100%);
+}
+.bg-white-grad-1 {
+  background: var(--white-grad-1);
+}
+
+#bg-effect {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  background: var(--white-grad-1);
+}
+/* Till here*/
 .hover-white-shadow:hover {
   text-shadow: 0 0 5px rgba(71, 233, 165, 0.4), 0 0 10px rgba(71, 233, 165, 0.4);
 }

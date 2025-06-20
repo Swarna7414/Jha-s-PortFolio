@@ -37,7 +37,7 @@ const Develop: React.FC = () => {
         {Array.from({ length: 20 }).map((_, i) => <span key={i}></span>)}
       </div>
       <section className="relative z-10 min-h-screen flex flex-col xl:flex-row scrollbar-hide">
-        <div className="xl:w-1/2 w-full xl:h-screen rounded-3xl xl:mt-4">
+        <div className="xl:w-1/2 w-full xl:h-screen rounded-3xl xl:mt-4 items-center">
           <img
             src={smallscreen}
             alt="Profile Small"
