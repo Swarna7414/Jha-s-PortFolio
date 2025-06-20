@@ -20,7 +20,7 @@ import { CIRRMRI600Link, CLEFmedLink, EndoCVLink, EndoTact2021, GastroVisionLink
 
 const DevelopConstact: React.FC = () => {
   return (
-    <section className="p-10 h-screen bg-black">
+    <section className="p-10 h-screen bg-white">
       <div className="flex flex-col h-full">
         <h1 className="self-center font-bold text-4xl hover:text-blue-300 cursor-pointer duration-300">
           Our DataSets
