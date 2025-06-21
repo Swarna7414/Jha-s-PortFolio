@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import smallscreen from '../assets/smallscreen.png';
 import BigScreenRe from '../assets/Bigscreen-preview.png';
 import cursorImage from '../assets/cursor.png';
@@ -6,6 +7,7 @@ import '../Styles/global.css';
 import '../Styles/animation.css';
 import '../Styles/component.css';
 import '../App.css';
+import { startBackgroundBallsEffect, cleanupBackgroundBallsEffect } from '../Styles/effect';
 
 import {
   Clarivate,
@@ -31,17 +33,27 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { RiTwitterXLine } from 'react-icons/ri';
 
 const Develop: React.FC = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.pathname === '/home' || location.pathname === '/') {
+      startBackgroundBallsEffect();
+    }
+
+    return () => {
+      cleanupBackgroundBallsEffect();
+    };
+  }, [location.pathname]);
+
   return (
-    <section className="relative w-screen min-h-screen overflow-hidden pt-[70px]">
-      <div className="circles-bg">
-        {Array.from({ length: 20 }).map((_, i) => <span key={i}></span>)}
-      </div>
+    <section className="relative w-screen min-h-screen overflow-hidden pt-[350px]">
+      <div id="bg-effect" className="absolute inset-0 z-0" key={location.pathname} />
       <section className="relative z-10 min-h-screen flex flex-col xl:flex-row scrollbar-hide">
         <div className="xl:w-1/2 w-full xl:h-screen rounded-3xl xl:mt-4 items-center">
           <img
             src={smallscreen}
             alt="Profile Small"
-            className="block xl:hidden w-60 sm:w-64 mx-auto mt-5"
+            className="block xl:hidden w-60 sm:w-64 mx-auto mt-65"
           />
           <img
             src={BigScreenRe}
@@ -65,7 +77,7 @@ const Develop: React.FC = () => {
             >
               <p className="text-lg font-medium text-justify leading-relaxed">
               I'm a Visiting Assistant Professor in the Department of Computer Science at the University of South Dakota. 
-              Recognized among the world’s top 2% scientists by Stanford University and Elsevier ranking for contributions 
+              Recognized among the world's top 2% scientists by Stanford University and Elsevier ranking for contributions 
               to AI in biomedical engineering, my research primarily focuses on developing advanced artificial intelligence 
               algorithms to enhance medical imaging and diagnostics across a range of clinical domains. 
               These include gastrointestinal (GI) tract imaging, liver and lung tumor analysis, and predictive modeling for radiation therapy outcomes. 

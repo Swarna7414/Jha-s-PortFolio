@@ -640,12 +640,22 @@ class BouncyBalloon extends PhysicsBase {
   }
 }
 
+let effectStarted = false;
+
 const start = () => {
   const bouncyBalloon = new BouncyBalloon("#bg-effect", false);
   bouncyBalloon.init();
 };
 
-let effectStarted = false;
+export function cleanupBackgroundBallsEffect() {
+  effectStarted = false;
+  const container = document.querySelector("#bg-effect");
+  if (container) {
+    while (container.firstChild) {
+      container.removeChild(container.firstChild);
+    }
+  }
+}
 
 export function startBackgroundBallsEffect() {
   if (effectStarted) return;
@@ -656,9 +666,6 @@ export function startBackgroundBallsEffect() {
     const container = document.querySelector("#bg-effect");
     if (container) {
       start();
-    } else {
-      console.warn("Element #bg-effect not found in DOM.");
-      effectStarted = false;
     }
   });
 }
